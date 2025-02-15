@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <!-- CSS Dosyasına Link Verme -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div class="controls">
+      <div class="row">
+        <button onclick="direction = {x: 0, y: -1}">↑</button>
+      </div>
+      <div class="row">
+        <button onclick="direction = {x: -1, y: 0}">←</button>
+        <div id="score" style="color: white; font-size: 24px; margin: 0 20px;">Yemek Sayısı: 0</div>
+        <button onclick="direction = {x: 1, y: 0}">→</button>
+      </div>
+      <div class="row">
+        <button onclick="direction = {x: 0, y: 1}">↓</button>
+      </div>
+    </div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <!-- JS Dosyasına Link Verme -->
+  <script src="script.js"></script>
+</body>
+</html>
